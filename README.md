@@ -17,5 +17,5 @@
 
 - Para montar o NFS basta seguir o exemplo abaixo:
 <pre>
-# mount -t nfs 10.0.0.11:/storage /mnt
+# mount -t nfs IP:/storage /mnt
 </pre>
