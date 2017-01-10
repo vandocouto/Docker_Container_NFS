@@ -19,6 +19,7 @@ $ sudo docker build -f build/Dockerfile -t nfs-server:1.0.0 .
 # exportfs -a
 </pre>
 OU
+
 <pre>
 # docker exec -it ID exportfs -a
 </pre>
