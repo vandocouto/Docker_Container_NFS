@@ -14,9 +14,13 @@ $ sudo docker build -f build/Dockerfile -t nfs-server:1.0.0 .
 
 </pre>
 
-- Para incluir um novo diretório / ip basta alterar o arquivo /etc/exports e em seguida executar o comando abaixo:
+- Ajuste o arquivo /etc/exports conforme seu ambiente. Em seguida execute o comando abaixo:
 <pre>
 # exportfs -a
+</pre>
+OU
+<pre>
+# docker exec -it ID exportfs -a
 </pre>
 
 <hr>
