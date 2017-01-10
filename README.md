@@ -1,6 +1,6 @@
 # NFS 
 
-# Construíndo a imagem (nfs-server).
+- Construíndo a imagem (nfs-server).
 <pre>
 $ sudo docker build -f build/Dockerfile -t nfs-server:1.0.0 .
 </pre>
