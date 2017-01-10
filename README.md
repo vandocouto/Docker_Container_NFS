@@ -25,3 +25,10 @@ $ sudo docker build -f build/Dockerfile -t nfs-server:1.0.0 .
 <pre>
 # mount -t nfs IP:/storage /mnt
 </pre>
+
+<hr>
+
+- Para iniciar o contaier execute o comando abaixo:
+<pre>
+# ./start.sh
+</pre>
