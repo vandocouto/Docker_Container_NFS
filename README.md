@@ -28,7 +28,7 @@ $ sudo docker build -f build/Dockerfile -t nfs-server:1.0.0 .
 
 <hr>
 
-- Para iniciar o contaier execute o comando abaixo:
+- Para iniciar o container execute o comando abaixo:
 <pre>
 # ./start.sh
 </pre>
