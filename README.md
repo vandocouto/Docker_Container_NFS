@@ -17,9 +17,7 @@ $ sudo docker build -f build/Dockerfile -t nfs-server:1.0.0 .
 - Ajuste o arquivo /etc/exports conforme seu ambiente. Em seguida execute o comando abaixo:
 <pre>
 # exportfs -a
-</pre>
-OU
-
+</pre>OU
 <pre>
 # docker exec -it ID exportfs -a
 </pre>
