@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Carregando os módulos 
+# Carregando os módulos necessários. 
 modprobe nfs
 modprobe nfsd
 
 # Variaveis.
 HOSTNAME="nfs-server"
-IMAGE="docker.icasei.com.br/nfs-server:1.0.0"
+IMAGE="nfs-server:1.0.0"
 
 # Removendo o Container morto.
 docker rm -f $(docker ps -aq --filter "name=$HOSTNAME") >> /dev/null 2>&1
@@ -26,5 +26,5 @@ $IMAGE /bin/bash
 id=$(docker ps -q --filter "name=$HOSTNAME")
 echo $id
 
-# Iniciando o NFS
+# Iniciando o NFS.
 docker exec -it $id ./run.sh
